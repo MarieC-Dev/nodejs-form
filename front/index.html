@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Node - Express</h1>
+    </header>
+
+    <main>
+        <section class="formSection">
+            <form 
+                action="http://localhost:3000/api/user"
+                method="post" 
+                enctype="multipart/form-data" 
+                id="nodeForm">
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom">
+                </div>
+                
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre mail">
+                </div>
+                
+                <div>
+                    <label for="image">Upload Image :</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                </div>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <section class="contentSection">
+        </section>
+    </main>
+
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
